@@ -71,7 +71,7 @@ namespace CurrencyAlert
                     ))
                 {
                     var name = EnumHelper.GetAttributeOfType<NameAttribute>(currency).Value;
-                    ImGui.Text($"You need to spend your {name}");
+                    ImGui.Text($"你该花 {name} 了！");
                 }
 
                 ImGui.End();
