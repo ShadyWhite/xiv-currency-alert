@@ -12,7 +12,7 @@ namespace CurrencyAlert.Enum
         TomestoneOfPoetics,
         [Name("经典神典石"), ItemID(42), DefaultThreshold(1700), Category("战斗")]
         TomestoneOfAphorism,
-        [Name("Tomestones of Astronomy"), ItemID(43), DefaultThreshold(1700), Category("战斗")]
+        [Name("天文神典石"), ItemID(43), DefaultThreshold(1700), Category("战斗")]
         TomestoneOfAstronomy,
 
         [Name("黑涡团军票"),  ItemID(20), DefaultThreshold(75000), Category("共通")]

@@ -93,7 +93,7 @@ namespace CurrencyAlert
 
                         if (ImGui.BeginTabItem(category))
                         {
-                            if (ImGui.Checkbox($"{name} Alert Enabled", ref alertEnabled))
+                            if (ImGui.Checkbox($"{name} 提醒启用", ref alertEnabled))
                             {
                                 this.configuration.AlertEnabled[currency] = alertEnabled;
                                 this.configuration.Save();
@@ -101,7 +101,7 @@ namespace CurrencyAlert
 
                             var thresholdValue = this.configuration.Threshold[currency];
 
-                            if (ImGui.InputInt($"{name} Threshold Value", ref thresholdValue, 1, 1,
+                            if (ImGui.InputInt($"{name} 阈值", ref thresholdValue, 1, 1,
                                 this.configuration.AlertEnabled[currency] ? ImGuiInputTextFlags.None : ImGuiInputTextFlags.ReadOnly))
                             {
                                 this.configuration.Threshold[currency] = thresholdValue;
